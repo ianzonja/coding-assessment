@@ -24,7 +24,7 @@ Upon this realization, I decided to suggest the adoption of a standard UI librar
 
 PrimeNG, an open-source UI library rich in components, offered a preferable alternative to building in-house components, as is the practice in Next-Sapien. It provided a pre-existing solution that is highly customizable.
 
-PrimeNG (https://primeng.org/installation) was incorporated into this solution due to its extensive components and full compatibility with Angular mechanisms, such as 2-way binding. PrimeNG is integrated with variety of tech such as Tailwind, and Icons, which resulted in widely pf PrimeNG for fast UI development.
+PrimeNG (https://primeng.org/installation) was incorporated into this solution due to its extensive components and full compatibility with Angular mechanisms, such as 2-way binding. PrimeNG is integrated with variety of tech such as Tailwind, and Icons, which resulted in widely of PrimeNG for fast UI development.
 
 There is no need to reinvent the wheel.
 
