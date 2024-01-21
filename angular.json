@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PreApPear": {
+    "coding-assessment": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist/pre-ap-pear",
+            "outputPath": "dist/coding-assessment",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -126,13 +126,13 @@
           "builder": "ngx-build-plus:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "PreApPear:build:production"
+              "browserTarget": "coding-assessment:build:production"
             },
             "beta": {
-              "browserTarget": "PreApPear:build:beta"
+              "browserTarget": "coding-assessment:build:beta"
             },
             "development": {
-              "browserTarget": "PreApPear:build:development",
+              "browserTarget": "coding-assessment:build:development",
               "proxyConfig": "src/proxy.conf.json"
             }
           },
@@ -141,7 +141,7 @@
         "extract-i18n": {
           "builder": "ngx-build-plus:extract-i18n",
           "options": {
-            "browserTarget": "PreApPear:build"
+            "browserTarget": "coding-assessment:build"
           }
         },
         "test": {
