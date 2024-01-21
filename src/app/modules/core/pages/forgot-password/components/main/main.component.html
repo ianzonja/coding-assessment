@@ -1,26 +1,41 @@
 <app-header></app-header>
-<div class="surface-0 overflow-hidden relative h-full">
-    <div class="flex align-items-center justify-content-between flex-column h-full">
-        <div
-            class="flex flex-column align-items-center justify-content-center w-12 h-full text-center py-6 px-4">
-            <div class="flex w-6 border-circle bg-primary-50 h-12rem sm:h-12rem w-12rem sm:w-12rem justify-content-center align-items-center">
+<div class="surface-0 overflow-hidden flex justify-content-center align-items-center relative h-full flex-wrap">
+    <div class="flex w-12 flex-wrap h-auto">
+        <div class="flex w-12 justify-content-center align-items-center text-primary text-sm sm:text-sm md:text-md lg:text-lg">
+            <h1>Forgot Password?</h1>
+        </div>
+        <div class="flex w-12 justify-content-center align-items-center text-purple-600 text-sm sm:text-sm md:text-md lg:text-lg py-4 px-2 text-center">
+            <span>Submit your account e-mail, and we will send you a verification code.</span>
+        </div>
+        <div class="flex w-12 justify-content-center px-2">
+            <div class="flex w-6 border-circle bg-primary-50 h-8rem w-8rem sm:w-10rem sm:h-10rem md:w-12rem md:h-12rem lg:w-15rem lg:h-15rem justify-content-center align-items-center">
                 <i class="pi pi-lock w-6 flex text-2xl justify-content-center text-primary"></i>
             </div>
-            <div class="flex flex-column mt-4">
-                <span class="p-float-label p-input-icon-left w-full mb-4">
-                    <i class="pi pi-info-circle"></i>
-                    <input pInputText id="email" [(ngModel)]="email" class="w-full md:w-25rem text-color-secondary surface-50 border-200" (keyup)="onUserInput($event)"/>
-                    <label for="email">Email</label>
-                </span>
-
-                <button pButton pRipple label="Send" class="w-full mb-4 mt-2" (click)="showToast()"></button>
-
-                <span class="text-red-500 mb-2">
-                    {{ error }}
-                </span>
-                <!-- <p class="font-medium text-400 m-0 mt-6">Don’t you have an account, <a href="#" class="text-primary cursor-pointer">sign up</a></p> -->
+        </div>
+        
+        <div class="flex w-12 justify-content-center py-4 px-2 flex-wrap">
+    
+            <div class="w-12 flex justify-content-center">
+                <div class="w-12 sm:w-10 md:w-4 lg:w-3 p-2 surface-0">
+                    <span class="p-float-label p-input-icon-left w-12">
+                        <i class="pi pi-info-circle"></i>
+                        <input pInputText id="email" [(ngModel)]="email" class="w-full text-color-secondary surface-50 border-200" (keyup)="onUserInput($event)"/>
+                        <label for="email">Email</label>
+                    </span>
+                </div>
             </div>
+    
+            <div class="w-12 flex justify-content-center">
+                <div class="w-12 sm:w-10 md:w-4 lg:w-3 p-2">
+                    <button pButton pRipple label="Send" class="w-12 mb-4 mt-2  p-fluid" (click)="showToast()"></button>
+                </div>
+            </div>
+    
+            <span class="text-red-500 mb-2">
+                {{ error }}
+            </span>
+            <!-- <p class="font-medium text-400 m-0 mt-6">Don’t you have an account, <a href="#" class="text-primary cursor-pointer">sign up</a></p> -->
         </div>
     </div>
 </div>
-<p-toast position="bottom-center" styleClass="w-12"></p-toast>
+<p-toast position="bottom-center" styleClass="w-12 sm:w-auto md:w-auto lg:w-auto"></p-toast>
