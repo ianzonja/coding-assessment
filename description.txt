@@ -1,11 +1,19 @@
 Assignment Development - Description
 
-Significant disparities exist between the UX design and UI development in my result and the initial project codebase I received.
+Website demo hosted at: https://coding-assessment.onrender.com/
+
+Stack: Angular, PrimeNG, 
+
+---
+
+
+Significant disparities exist between the UX design and UI development between my demo version and the initial project codebase I received.
 
 I commenced work on this codebase with a hint of skepticism.
 
 The routing system lacked routing modules.
 The layout page lacked clarity, and modularity between layout, pages, and components appeared improvable.
+
 Nevertheless, I initiated the UI development, following the guidelines outlined in the project documentation available at this web link: https://showcase.thecyrano.app/.
 
 The development experience was less than pleasant. After making minimal progress and realizing that the documentation might not be ready, and components might still be in progress, I encountered difficulties implementing the input field styling.
@@ -16,7 +24,7 @@ Upon this realization, I decided to suggest the adoption of a standard UI librar
 
 PrimeNG, an open-source UI library rich in components, offered a preferable alternative to building in-house components, as is the practice in Next-Sapien. It provided a pre-existing solution that is highly customizable.
 
-PrimeNG (https://primeng.org/installation) was incorporated into this solution due to its extensive components and full compatibility with Angular mechanisms, such as 2-way binding.
+PrimeNG (https://primeng.org/installation) was incorporated into this solution due to its extensive components and full compatibility with Angular mechanisms, such as 2-way binding. PrimeNG also supports Tailwind, which is widely adopted in front-end development community for fast UI development.
 
 There is no need to reinvent the wheel.
 
