@@ -40,7 +40,7 @@ The current solution lacks services and API calls, which are integral to back-en
 
 Additionally, there is a deficiency in input validation. I am willing to address this further, for instance, by implementing an error state for the email input.
 
-Setting up the project, integrating PrimeNG, resolving issues, and ultimately constructing a pleasing UI required a considerable investment of time. However, I am confident that the long-term benefits justify the initial time expenditure.
+Setting up the project, integrating PrimeNG, resolving issues, and ultimately constructing a pleasing UI required a considerable investment of time. However, I am confident that the long-term benefits justify the initial time expenditure. I can show further improvements of the project with validation, dynamic data integration, and state management, but that would require further time expenditures.
 
 I am ready for further evaluation, but I also have to express my obligation of further communication and evaluation between other parties.
 
