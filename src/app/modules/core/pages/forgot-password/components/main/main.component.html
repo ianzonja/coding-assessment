@@ -1,0 +1,26 @@
+<app-header></app-header>
+<div class="surface-0 overflow-hidden relative h-full">
+    <div class="flex align-items-center justify-content-between flex-column h-full">
+        <div
+            class="flex flex-column align-items-center justify-content-center w-12 h-full text-center py-6 px-4">
+            <div class="flex w-6 border-circle bg-primary-50 h-12rem sm:h-12rem w-12rem sm:w-12rem justify-content-center align-items-center">
+                <i class="pi pi-lock w-6 flex text-2xl justify-content-center text-primary"></i>
+            </div>
+            <div class="flex flex-column mt-4">
+                <span class="p-float-label p-input-icon-left w-full mb-4">
+                    <i class="pi pi-info-circle"></i>
+                    <input pInputText id="email" [(ngModel)]="email" class="w-full md:w-25rem text-color-secondary surface-50 border-200" (keyup)="onUserInput($event)"/>
+                    <label for="email">Email</label>
+                </span>
+
+                <button pButton pRipple label="Send" class="w-full mb-4 mt-2" (click)="showToast()"></button>
+
+                <span class="text-red-500 mb-2">
+                    {{ error }}
+                </span>
+                <!-- <p class="font-medium text-400 m-0 mt-6">Don’t you have an account, <a href="#" class="text-primary cursor-pointer">sign up</a></p> -->
+            </div>
+        </div>
+    </div>
+</div>
+<p-toast position="bottom-center" styleClass="w-12"></p-toast>

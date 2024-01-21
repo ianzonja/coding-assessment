@@ -1,0 +1,40 @@
+@import 'assets/styles/typography.scss';
+
+@import url("../node_modules/primeicons/primeicons.css");
+@import url("./assets/styles/saga-purple.theme.scss");
+@import url("../node_modules/primeflex/primeflex.css");
+
+$font-family: "Gilroy, Arial, Helvetica, sans-serif";
+
+.f-calistoga-header {
+  font-family: Calistoga, serif;
+}
+
+.f-gilroy-text {
+  font-family: Gilroy, Arial, Helvetica, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  background: var(--surface-ground);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+.layout-container {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
