@@ -1,24 +1,43 @@
-Assignment development - description
+Assignment Development - Description
 
-There are a lot of differences in UX design and UI development in my result, and the first project code-base I was given.
+Significant disparities exist between the UX design and UI development in my result and the initial project codebase I received.
 
-I started working on that code-base with a little bit of skepsis.
+I commenced work on this codebase with a hint of skepticism.
 
--Routing system was not set up with routing modules
--Layout page was not clear. Modularity between Layout, pages and components seemed improvable.
+The routing system lacked routing modules.
+The layout page lacked clarity, and modularity between layout, pages, and components appeared improvable.
+Nevertheless, I initiated the UI development, following the guidelines outlined in the project documentation available at this web link: https://showcase.thecyrano.app/.
 
-Nevertheless, I started building the UI, by the guidelines of the project documentation on this web link: https://showcase.thecyrano.app/
+The development experience was less than pleasant. After making minimal progress and realizing that the documentation might not be ready, and components might still be in progress, I encountered difficulties implementing the input field styling.
 
-It was not pleasant development experience. After some time of progress in very small steps, I realized that the documentation is not ready, maybe components are still in progress, but I was unable to get the input field styling.
+This prompted me to question why I was building components from UX designs (https://www.figma.com/file/gF1aF4Y4HdI9pRFxzLm8ny/Toastr?type=design&node-id=2-784&mode=design) that I did not find visually appealing, using documentation that was not user-friendly.
 
-Then I asked myself, why am I building components, from UX (https://www.figma.com/file/gF1aF4Y4HdI9pRFxzLm8ny/Toastr?type=design&node-id=2-784&mode=design) that I do not really like.. and using the documentation that is not simple to use.
+Upon this realization, I decided to suggest the adoption of a standard UI library widely used by the developer community. Consequently, I replaced the old theme with PrimeNG: PrimeNG Installation.
 
-I then realized I do not want that, and hoped to suggest to use some UI library that is standard and used by developer comunity.
+PrimeNG, an open-source UI library rich in components, offered a preferable alternative to building in-house components, as is the practice in Next-Sapien. It provided a pre-existing solution that is highly customizable.
 
-So I removed the old theme, and imported PrimeNG: https://primeng.org/installation
+PrimeNG (https://primeng.org/installation) was incorporated into this solution due to its extensive components and full compatibility with Angular mechanisms, such as 2-way binding.
 
-PrimeNG is open source UI library rich with a lot of components. Basically, instead of building in-house components like I realized is a practice in Next-Sapien, I imported the solution that already has everything done, and highly customizable.
+There is no need to reinvent the wheel.
 
-After that I restructured the routing system. Now every route has the logical tree connected with the module. And I also created a main layot as a module.
+Subsequently, I enhanced the project by adopting a superior UI library and restructuring the routing system. Now, each route is logically connected to the module, and I introduced a main layout as a module.
 
-Finally I started building beautiful UI that is inspired by documentation, but with my own UX idea.
+Finally, I began constructing a beautiful UI inspired by the documentation but infused with my own UX ideas.
+
+I firmly believe my solution surpasses the one initially provided, as it accelerates development speed and, consequently, reduces development costs.
+
+This project serves as a testament to my coding assessment.
+
+The current solution lacks services and API calls, which are integral to back-end development.
+
+Additionally, there is a deficiency in input validation. I am willing to address this further, for instance, by implementing an error state for the email input.
+
+Setting up the project, integrating PrimeNG, resolving issues, and ultimately constructing a pleasing UI required a considerable investment of time. However, I am confident that the long-term benefits justify the initial time expenditure.
+
+I am ready for further evaluation, but I also have to express my obligation of further communication and evaluation between other parties.
+
+I am happily awaiting your response and look forward to connecting with the team on a video call to introduce myself, and get to know the team and business.
+
+Best regards,
+Ian Zonja
+Senior Full-Stack MEAN developer
