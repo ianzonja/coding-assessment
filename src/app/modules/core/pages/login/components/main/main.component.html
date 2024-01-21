@@ -1,7 +1,6 @@
-<div class="surface-0 overflow-hidden relative h-full">
-    <div class="flex align-items-center justify-content-between flex-column h-screen">
-        <div
-            class="flex flex-column align-items-center justify-content-center w-full md:w-4 h-full text-center py-6 px-4">
+<div class="surface-0 overflow-hidden flex justify-content-center align-items-center relative h-full flex-wrap pt-2">
+    <div class="flex w-12 flex-wrap h-auto">
+        <div class="flex w-12 justify-content-center align-items-center text-primary text-sm sm:text-sm md:text-md lg:text-lg">
             <a href="https://nextsapien.com/" target="_blank" class="mb-4">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                     width="300.000000pt" height="51.000000pt" viewBox="0 0 300.000000 51.000000"
@@ -53,32 +52,38 @@
                     </g>
                 </svg>
             </a>
-            <div class="flex flex-column mt-2">
-                <span class="p-float-label p-input-icon-left w-full mb-4">
+        </div>
+        <div class="flex w-12 justify-content-center px-2">
+            <div class="flex w-12 sm:w-10 md:w-6 lg:w-4 flex-wrap px-2 py-4">
+                <span class="p-float-label p-input-icon-left w-12 mb-4 justify-content-center">
                     <i class="pi pi-user"></i>
-                    <input pInputText id="email" [(ngModel)]="email" class="w-full md:w-25rem text-color-secondary surface-50 border-200" (keyup)="onUserInput($event)"/>
+                    <input pInputText id="email" [(ngModel)]="email" class="w-full text-color-secondary surface-50 border-200" (keyup)="onUserInput($event)"/>
                     <label for="email">Email</label>
                 </span>
-                <span class="p-float-label p-input-icon-left w-full mb-4 mt-1">
+                <span class="p-float-label p-input-icon-left w-12 mt-1 justify-content-center">
                     <i class="pi pi-search"></i>
                     <input id="password" [(ngModel)]="password" type="password" pInputText
-                        class="w-full md:w-25rem text-color-secondary surface-50 border-200"
+                        class="w-full text-color-secondary surface-50 border-200"
                         (keyup)="onUserInput($event)" />
                     <label for="password">Password</label>
                 </span>
+            </div>
+        </div>
 
-                <button pButton pRipple label="Login" class="w-full mb-4 mt-2" (click)="showToast()"></button>
-
-                <div class="flex w-12 justify-content-center">
-                    <button pButton pRipple label="Warning" class="w-full mb-4 mt-2 p-button-warning w-12 sm:w-12 md:w-4 lg:w-3" severity="warning" (click)="showWarningToast()"></button>
+        <div class="flex w-12 justify-content-center px-2">
+            <div class="flex w-12 sm:w-10 md:w-6 lg:w-4 flex-wrap px-2 py-4">
+                <div class="flex w-12 justify-content-center flex-wrap">
+                    <div class="flex w-12">
+                        <button pButton pRipple label="Login" class="w-full mb-2 mt-2" (click)="showToast()"></button>
+                    </div>
+                    <div class="flex w-12 sm:w-12 md:w-4 lg:w-3">
+                        <button pButton pRipple label="Warning" class="w-full pb-2 mt-2 p-button-warning" severity="warning" (click)="showWarningToast()"></button>
+                    </div>
                 </div>
 
-                <span class="text-red-500 mb-2">
-                    {{ error }}
-                </span>
-
-                <a class="font-medium text-sm text-500" routerLink="/password-recovery">Forgot password?</a>
-                <!-- <p class="font-medium text-400 m-0 mt-6">Don’t you have an account, <a href="#" class="text-primary cursor-pointer">sign up</a></p> -->
+                <div class="flex w-12 justify-content-center mt-4">
+                    <a class="font-medium text-sm text-500 " routerLink="/password-recovery">Forgot password?</a>
+                </div>
             </div>
         </div>
     </div>
