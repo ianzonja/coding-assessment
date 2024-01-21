@@ -1,0 +1,24 @@
+Assignment development - description
+
+There are a lot of differences in UX design and UI development in my result, and the first project code-base I was given.
+
+I started working on that code-base with a little bit of skepsis.
+
+-Routing system was not set up with routing modules
+-Layout page was not clear. Modularity between Layout, pages and components seemed improvable.
+
+Nevertheless, I started building the UI, by the guidelines of the project documentation on this web link: https://showcase.thecyrano.app/
+
+It was not pleasant development experience. After some time of progress in very small steps, I realized that the documentation is not ready, maybe components are still in progress, but I was unable to get the input field styling.
+
+Then I asked myself, why am I building components, from UX (https://www.figma.com/file/gF1aF4Y4HdI9pRFxzLm8ny/Toastr?type=design&node-id=2-784&mode=design) that I do not really like.. and using the documentation that is not simple to use.
+
+I then realized I do not want that, and hoped to suggest to use some UI library that is standard and used by developer comunity.
+
+So I removed the old theme, and imported PrimeNG: https://primeng.org/installation
+
+PrimeNG is open source UI library rich with a lot of components. Basically, instead of building in-house components like I realized is a practice in Next-Sapien, I imported the solution that already has everything done, and highly customizable.
+
+After that I restructured the routing system. Now every route has the logical tree connected with the module. And I also created a main layot as a module.
+
+Finally I started building beautiful UI that is inspired by documentation, but with my own UX idea.
